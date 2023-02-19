@@ -1,3 +1,6 @@
+const subContact = document.getElementById("submitContact");
+const sectionContact = document.getElementById("sectionContact");
+
 /* etiqueta las imágenes pra poder rastrearlas, solo por conveniencia */
 let i = 1;
 for (let li of carousel.querySelectorAll("li")) {
@@ -30,6 +33,15 @@ carousel.querySelector(".next").onclick = function () {
   // desplazamiento derecho
   position -= width * count;
   // solo se puede desplazar el carrete de imágenes (longitud total de la cinta - conteo visibles)
-  position = Math.max(position, -width * (listElems.length - count));
+  position = Math.max(position, -width * (listElems.length - count * 4));
   list.style.marginLeft = position + "px";
 };
+
+subContact.addEventListener("click", (e) => {
+  var mensaje = document.createElement("h1");
+  mensaje.classList.add("titulos");
+
+  mensaje.innerHTML = "Gracias por contactarnos";
+
+  sectionContact.appendChild(mensaje);
+});

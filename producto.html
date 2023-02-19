@@ -25,7 +25,7 @@
     <!-- hojas de estilo local -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleNav.css">
-    <title>Nosotros</title>
+    <title>Contacto</title>
 </head>
 
 <body>
@@ -35,39 +35,26 @@
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="recitas.html">Recetas</a></li>
-                <li><a href="#">Productos</a></li>
+                <li><a href="productos.html">Productos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
 
         </nav>
         <input class="buscar" type="text" placeholder="Buscar">
-        <!-- <img class="menu" src="Imagenes/menu.png" alt="menu"> -->
     </div>
     <div class="path">
-        <p>Inicio > Sobre Nosotros</p>
+        <p>Inicio > Productos</p>
     </div>
     <section>
-        <!-- <h1 class="titulos">Sobre Nosotros</h1> -->
-
-        <div id="staff-contenidor">
-            <img src="Imagenes/staff.png" alt="Yo">
-            <div class="desc">
-                <h2>SOUFIANE lACHKAR</h2>
-                <p id="subTitle">Desarrollador web | Chef</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam eligendi distinctio
-                    perferendis quam, natus veritatis eius saepe dolorem, ipsum eveniet provident, aliquam fugit quasi?
-                    Voluptatibus maxime officiis aut corrupti natus. Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Omnis rerum, culpa aperiam praesentium quaerat, facilis tempora natus eligendi odit in alias
-                    architecto aspernatur. Asperiores fugit distinctio, iure cumque natus laboriosam. Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Recusandae quasi voluptatibus esse fugit ipsa vero corporis
-                    iusto itaque commodi dolore ducimus, quibusdam quia porro tenetur veniam doloribus distinctio culpa
-                    sed!<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus cumque sit
-                    dolorem
-                    quia nesciunt maxime, architecto ullam iste tempora mollitia excepturi soluta vel magni id, nemo
-                    omnis quisquam quibusdam magnam?</p>
+        <div class="productoSection">
+            <img src="Imagenes/Cookeis4.jpg" alt="">
+            <div class="descProduct">
+                <h1 class="titulo">Galletas Test</h1>
+                <p class="descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas vero laboriosam
+                    laborum deleniti sit blanditiis quod excepturi magnam! Sequi vel inventore porro voluptas officia
+                    perferendis sapiente tempore accusantium sint ducimus.</p>
             </div>
         </div>
-
     </section>
     <!-- Footer -->
     <div class="footer-clean">
@@ -109,7 +96,20 @@
         </footer>
     </div>
 
-    <script src="main.js"></script>
+
+    <script>
+        const subContact = document.getElementById("submitContact");
+        const sectionContact = document.getElementById("sectionContact");
+
+        subContact.addEventListener("click", (e) => {
+            sectionContact.innerHTML = "";
+            var mensaje = document.createElement("h1");
+            mensaje.classList.add("titulos");
+
+            mensaje.innerHTML = `Gracias Por contactarnos`;
+
+            sectionContact.appendChild(mensaje);
+        });</script>
 </body>
 
 </html>
