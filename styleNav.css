@@ -105,3 +105,14 @@
   }
 
 }
+
+@media (max-width: 500px) {
+  .navigacion {
+    height: 50px;
+  }
+  .navigacion #logo {
+    height: 70px;
+  }
+
+}
+
