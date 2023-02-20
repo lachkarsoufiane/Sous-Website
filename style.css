@@ -203,6 +203,7 @@ section {
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .recita-contenidor:hover {
@@ -223,6 +224,7 @@ section {
   padding: 0 20px;
   /* background-color: #f5f5f5; */
   border-radius: 20px;
+  overflow: hidden;
 }
 
 #staff-contenidor img {
@@ -235,6 +237,10 @@ section {
   font-size: x-large;
   color: #8b8b8b;
   margin-top: 0;
+}
+
+#sobreNosotros {
+  display: none;
 }
 
 /* ------------------- Pagina contact--------------------- */
@@ -458,4 +464,146 @@ section {
 .gallery li {
   display: inline-block;
   padding: 0 20px;
+}
+
+
+/* responsive */
+@media (max-width: 800px) {
+
+  .banner {
+    padding: 20px;
+  }
+  .banner img {
+    height: 500px;
+  }
+
+  .carousel {
+    padding: 0 70px;
+  }
+
+  .gallery li {
+    padding: 0;
+  }
+
+  .carousel img {
+    width: 280px ;
+  }
+
+  .titulos {
+    font-size: 30px;
+  }
+
+  /* Productos */
+.producto {
+  width: 45%;
+}
+
+
+/* Contacto */
+.form-contact {
+  width: 100%;
+}
+
+/* Nosotros */
+#staff-contenidor {
+  flex-direction: column;
+  height: fit-content;
+}
+
+#staff-contenidor img {
+  height: auto;
+  width: 100%;
+  margin: 50px;
+}
+
+#sobreNosotros {
+  display: block;
+}
+
+}
+
+@media (max-width: 600px){
+  .puntos {
+    display: none;
+  }
+
+  .banner img {
+    height: 320px;
+  }
+
+  .carousel {
+    padding: 0;
+  }
+
+  .gallery li {
+    padding: 0 40px;
+  }
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right:  0;
+    z-index: 2;
+  }
+
+  .arrow span {
+    padding: 0;
+  }
+
+  #imagenes {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  #imagenes .img-raw {
+    width: 100%;
+  }
+
+  #imagenes p {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.titulos-space {
+  margin: 30px 0 20px;
+}
+
+
+/* Recitas */
+.recita-contenidor {
+  flex-direction: column;
+  height: fit-content;
+}
+
+.recita-contenidor img {
+  height: auto;
+  width: 100%;
+}
+
+.recita-contenidor .desc {
+  text-align: justify;
+  padding: 15px;
+}
+
+.recita-contenidor h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Productos */
+.producto {
+  width: 90%;
+}
+
+/* contacto */
+.form-contact input[type="text"] {
+  width: 92%;
+  margin: 15px 0;
+}
+
+  
 }

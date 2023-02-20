@@ -79,3 +79,29 @@
   height: 25px;
   margin-right: 25px;
 }
+
+
+/* Responsive nav */
+
+@media (max-width: 800px) {
+  .navigacion nav, .buscar {
+    display: none;
+  }
+  .navigacion {
+    height: 70px;
+  }
+
+  .navigacion a{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .navigacion img {
+    margin-left: 0 !important;
+    height: 100%;
+  }
+
+  .navigacion #logo {
+    height: 90px;
+  }
+
+}
