@@ -233,6 +233,10 @@ section {
   margin-right: 50px;
 }
 
+#staff-contenidor p {
+  text-align: justify;
+}
+
 #staff-contenidor #subTitle {
   font-size: x-large;
   color: #8b8b8b;
@@ -516,6 +520,8 @@ section {
   width: 100%;
   margin: 50px;
 }
+
+
 
 #sobreNosotros {
   display: block;
